@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% block content %}
+
+ <!--row buttons -->
+ <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasstart" role="button"
+ aria-controls="offcanvasstart">
+ Sélection des ports de départs
+</a>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasend"
+ aria-controls="offcanvasRight">
+ Sélection des ports de destination
+</button>
+<button class="btn btn-danger" type="button" id="clear-all-filters">
+Supprimer tous les filtres
+</button>    
+<form id="ui-selected-data">
+  <input type="hidden" id="departure-selected-data" name="departure-selected-data" value=""/>
+  <input type="hidden" id="destination-selected-data" name="destination-selected-data" value=""/>
+  </form>
+<!--end row buttons -->
+
+<!--collapse sections -->
+<div class="row">
+ <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-datagrid"
+   aria-expanded="false" aria-controls="collapse-datagrid">Voir les données</button>
+   <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-validated-filters"
+   aria-expanded="false" aria-controls="collapse-datagrid">Voir les filtres appliqués</button>
+</div>
+<div class="row collapse" id="collapse-datagrid">
+ <div id="dataGrid"></div>
+</div>
+<div class="row collapse" id="collapse-validated-filters">
+  <p> <bold>Ports de départ</bold> : <span id="returned-dep"></span></p>
+  <p> <bold>Ports de destination</bold> : <span id="returned-dest"></p>
+ </div>
+ <!--end collapse sections -->
+
+<!-- arc diagram
+<div class="row">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="card-title">Connections entre ports</h5>
+    </div>
+    <div class="card-body">
+      <div id="highcharts-arcdiagram-departure-destination" style="height:500px;max-width:100%;margin: 0 auto;">
+      </div>
+      </div>
+</div>
+end arc diagram-->
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Statistiques</h5>
+      </div>
+      <div class="card-body">
+        <div id="highcharts-gauge" style="height:500px;max-width:100%;margin: 0 auto;">
+        </div>
+  </div>
+  </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Connections entre provinces</h5>
+      </div>
+      <div class="card-body">
+        <div id="highcharts-dependencywheel-departure-destination" style="height:500px;max-width:100%;margin: 0 auto;">
+        </div>
+  </div>
+</div>
+</div>
+</div>
+   
+ <!-- products streamchart-->
+ <div class="row">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="card-title">Produits transportés</h5>
+    </div>
+    <div class="card-body">
+      <div id="highcharts-streamgraph-products" style="height: 400px;max-width: 100%;margin: 0 auto;"></div>
+      </div>
+      </div>
+</div>
+  <!-- product streamchart-->
+   <!-- double line series : count travels and sum tonnage-->
+   <div class="row">
+     <div id="echarts-timeseries-travels-tonnage" style="height: 400px;max-width: 100%;margin: 0 auto;"></div>
+   </div>
+    <!-- end double line series-->
+    <!-- time series-->
+   <div class="row">
+     <div id="echarts-timeseries-outdate" style="height: 400px;max-width: 100%;margin: 0 auto;"></div>
+   </div>
+    <!-- end time series-->
+
+     <!--left offcanvas-->
+     {% with direction="start", key="departure", label="départ" %}
+         {% include 'includes/offcanvas.html' %}
+     {% endwith %}
+   <!--End left offcanvas-->
+
+   <!--right offcanvas-->
+   {% with direction="end", key="destination", label="destination" %}
+   {% include 'includes/offcanvas.html' %}
+{% endwith %}
+
+   <!--End right offcanvas-->
+{% endblock %}

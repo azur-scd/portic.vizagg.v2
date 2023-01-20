@@ -1,0 +1,398 @@
+name,group,uhgs_id,parent_uhgs_id
+La Rochelle,admiralty,ADM1,PRV1
+Nantes,admiralty,ADM2,PRV2
+Honfleur,admiralty,ADM3,PRV3
+Sables-d’Olonne,admiralty,ADM4,PRV4
+Bayonne,admiralty,ADM5,PRV5
+Marennes,admiralty,ADM6,PRV6
+Rouen,admiralty,ADM7,PRV3
+Collioure,admiralty,ADM8,PRV7
+Saint-Malo,admiralty,ADM9,PRV2
+Saint-Tropez,admiralty,ADM10,PRV8
+Bordeaux,admiralty,ADM11,PRV5
+Dunkerque,admiralty,ADM12,PRV9
+Toulon,admiralty,ADM13,PRV8
+Antibes,admiralty,ADM14,PRV8
+Quillebeuf,admiralty,ADM15,PRV3
+Le Havre,admiralty,ADM16,PRV3
+Cherbourg,admiralty,ADM17,PRV3
+Port-Bail,admiralty,ADM18,PRV3
+Boulogne,admiralty,ADM19,PRV10
+Fécamp,admiralty,ADM20,PRV3
+Caudebec et Quilleboeuf,admiralty,ADM21,PRV3
+Granville,admiralty,ADM22,PRV3
+Saint-Valéry-en-Caux,admiralty,ADM23,PRV3
+Abbeville,admiralty,ADM24,PRV10
+Saint-Valéry-sur-Somme,admiralty,ADM25,PRV10
+Lorient,admiralty,ADM26,PRV2
+Calais,admiralty,ADM27,PRV10
+Caen,admiralty,ADM28,PRV3
+La Hougue,admiralty,ADM29,PRV3
+Brest,admiralty,ADM30,PRV2
+Barfleur,admiralty,ADM31,PRV3
+Cap-Français,admiralty,ADM32,PRV11
+Dieppe,admiralty,ADM33,PRV3
+Isigny,admiralty,ADM34,PRV3
+Morlaix,admiralty,ADM35,PRV2
+Arles,admiralty,ADM36,PRV8
+Eu et Tréport,admiralty,ADM37,PRV3
+Marseille,admiralty,ADM38,PRV8
+Saint-Pierre-et-Miquelon,admiralty,ADM39,PRV12
+Sète,admiralty,ADM40,PRV13
+Vannes,admiralty,ADM41,PRV2
+Bastia,admiralty,ADM42,PRV14
+Ajaccio,admiralty,ADM43,PRV14
+Coutances,admiralty,ADM44,PRV3
+Saint-Brieuc,admiralty,ADM45,PRV2
+Quimper,admiralty,ADM46,PRV2
+Narbonne,admiralty,ADM47,PRV13
+Agde,admiralty,ADM48,PRV13
+Cayenne,admiralty,ADM49,PRV15
+La Ciotat,admiralty,ADM50,PRV8
+Fréjus,admiralty,ADM51,PRV8
+Les Cayes,admiralty,ADM52,PRV11
+Port-au-Prince,admiralty,ADM53,PRV11
+Saint-Marc,admiralty,ADM54,PRV11
+Saint-Pierre,admiralty,ADM55,PRV16
+Bayeux,admiralty,ADM56,PRV3
+Pointe-à-Pitre,admiralty,ADM57,PRV17
+Jérémie,admiralty,ADM58,PRV11
+Petit-Goave,admiralty,ADM59,PRV11
+Saint-Louis,admiralty,ADM60,PRV11
+Martigues,admiralty,ADM61,PRV8
+Jacmel,admiralty,ADM62,PRV11
+Aunis,province,PRV1,Z
+Bretagne,province,PRV2,Z
+Normandie,province,PRV3,Z
+Poitou,province,PRV4,Z
+Guyenne,province,PRV5,Z
+Saintonge,province,PRV6,Z
+Roussillon,province,PRV7,Z
+Provence,province,PRV8,Z
+Flandre,province,PRV9,Z
+Picardie,province,PRV10,Z
+Saint-Domingue,province,PRV11,Z
+Canada,province,PRV12,Z
+Languedoc,province,PRV13,Z
+Corse,province,PRV14,Z
+Guyane,province,PRV15,Z
+Martinique,province,PRV16,Z
+Guadeloupe,province,PRV17,Z
+Saint-Martin-de-Ré,port,A0127055,ADM1
+La Flotte-en-Ré,port,A0199508,ADM1
+Nantes,port,A0124817,ADM2
+Touques,port,A0158963,ADM3
+Saint-Gilles-sur-Vie,port,A0195938,ADM4
+Bayonne,port,A0187995,ADM5
+Ribérou,port,A1964767,ADM6
+Marennes,port,A0136930,ADM6
+Rouen,port,A0122218,ADM7
+Collioure,port,A0181755,ADM8
+Le Pouliguen,port,A0162516,ADM2
+Rochefort,port,A0196496,ADM1
+Tonnay-Charente,port,A0171758,ADM6
+Saint-Malo,port,A0170819,ADM9
+Saint-Tropez,port,A0147257,ADM10
+Blaye,port,A0207141,ADM11
+Dunkerque,port,A0204180,ADM12
+Cavalaire ,port,A0181293,ADM13
+Bandol,port,A0145176,ADM13
+Golfe-Juan,port,A0130651,ADM14
+Quillebeuf,port,A0173748,ADM15
+Le Havre,port,A0187101,ADM16
+Cherbourg,port,A0205085,ADM17
+Port-Bail,port,A0209786,ADM18
+Boulogne-sur-Mer,port,A0152606,ADM19
+Fécamp,port,A0192135,ADM20
+Les Sables-d'Olonne,port,A0137148,ADM4
+Pont-Audemer,port,A0185236,ADM21
+Caudebec,port,A0180920,ADM21
+Honfleur,port,A0187836,ADM3
+Harfleur,port,A0204500,ADM16
+Granville,port,A0167057,ADM22
+Bordeaux,port,A0180923,ADM11
+La Rochelle,port,A0198999,ADM1
+Saint-Valéry-en-Caux,port,A0135548,ADM23
+Abbeville,port,A0169591,ADM24
+Saint-Valéry-sur-Somme,port,A0196771,ADM25
+Lorient,port,A0140266,ADM26
+Calais,port,A0165080,ADM27
+Courseulles,port,A0180068,ADM28
+La Hougue,port,A0177816,ADM29
+Brest,port,A0200718,ADM30
+Barfleur,port,A0181496,ADM31
+Cap-Français,port,B2048070,ADM32
+île de Bouin,port,A0165077,ADM4
+Dieppe,port,A0130761,ADM33
+Grandcamp,port,A0201236,ADM34
+La Perrotine,port,A1964982,ADM6
+Morlaix,port,A0185385,ADM35
+Bourgneuf,port,A0138654,ADM2
+Caen ,port,A0132409,ADM28
+Isigny,port,A0130741,ADM34
+Marans,port,A1964694,ADM1
+Toulon,port,A0200330,ADM13
+Saint-Denis d'Oléron,port,A0141325,ADM6
+Beaucaire,port,A0139108,ADM36
+La Roche-Bernard,port,A0149919,ADM2
+Le Tréport,port,A0212320,ADM37
+Saint-Laurent-de-la-Salanque,port,A0209302,ADM8
+Ars-en-Ré,port,A0133403,ADM1
+La Teste,port,A0189289,ADM11
+Le Château-d'Oléron,port,A0138533,ADM6
+Marseille,port,A0210797,ADM38
+Beauvoir-sur-Mer,port,A0181608,ADM4
+Noirmoutier,port,A0136403,ADM4
+Saint-Pierre-et-Miquelon,port,B1965595,ADM39
+Landerneau,port,A0141652,ADM30
+Royan,port,A0172590,ADM6
+Libourne,port,A0215306,ADM11
+Sète,port,A0170986,ADM40
+Mesquer,port,A0148900,ADM2
+Le Croisic,port,A0213139,ADM2
+Soubise,port,A0148208,ADM1
+Billiers,port,A0168677,ADM41
+Le Conquet,port,A0187969,ADM30
+Dives,port,A0180812,ADM28
+Roscoff,port,A0122918,ADM30
+Pornic,port,A0148531,ADM2
+Méan,port,A0194731,ADM2
+La Tranche-sur-Mer,port,A0165056,ADM4
+île d'Yeu,port,A0195014,ADM4
+Gravelines,port,A0189462,ADM12
+île d'Oléron,port,A0128573,ADM6
+Bastia,port,A0193167,ADM42
+Ajaccio,port,A0218974,ADM43
+Courtils,port,A0204935,ADM22
+îles Chausey,port,A0206322,ADM44
+Saint-Cast,port,A0134417,ADM45
+Île-aux-Moines,port,A0185539,ADM41
+Saint-Jean-de-Luz,port,A0122594,ADM5
+Douarnenez,port,A0142523,ADM46
+Hyères,port,A1964985,ADM13
+île de Ré,port,A0151330,ADM1
+Étaples ,port,A0192436,ADM19
+Paimpol,port,A0214583,ADM45
+Chaillevette,port,A0212883,ADM6
+Belle-Île-en-Mer,port,A0131657,ADM41
+Quimperlé,port,A0186080,ADM46
+Seudre,port,A0178037,ADM6
+Moricq,port,A1963997,ADM4
+Saint-Michel-en-l'Herm,port,A0122971,ADM4
+Penpoul,port,A0137359,ADM30
+Plouharnel,port,A0148246,ADM41
+Mortagne,port,A0124809,ADM6
+Vannes,port,A0182952,ADM41
+Le Passage,port,A0138463,ADM46
+Socoa,port,A0127400,ADM5
+Diélette,port,A0130763,ADM17
+Le Crotoy,port,A0212088,ADM24
+Champagné-les-Marais,port,A0169240,ADM4
+Talmont,port,A0207992,ADM4
+Saint-Nazaire / Sanary-sur-Mer,port,A0134267,ADM13
+Portsall,port,A0209662,ADM30
+La Nouvelle,port,A0161143,ADM47
+Agde,port,A0218780,ADM48
+Saint-Pol-de-Léon,port,A0135801,ADM30
+Luçon,port,A0211235,ADM4
+Le Brusc,port,A0166282,ADM13
+Argenton,port,A0169612,ADM30
+Quinéville,port,A0209998,ADM29
+Cancale,port,A0205141,ADM9
+Port-Launay,port,A0207066,ADM46
+Côtes de Bretagne,port,A1964988,ADM46
+Cayenne,port,B2009606,ADM49
+Pont-l'Abbé,port,A0124462,ADM46
+Binic,port,A0127863,ADM45
+La Ciotat,port,A0166649,ADM50
+Genêts ,port,A0177077,ADM22
+Bourg,port,A0205721,ADM11
+Le Légué,port,A0174281,ADM45
+Pénestin,port,A0199243,ADM41
+Saint-Raphaël,port,A0170853,ADM51
+Esnandes,port,A0213721,ADM1
+Saint-Brieuc,port,A0122932,ADM45
+Bormes,port,A0132389,ADM13
+Giens,port,A0130812,ADM13
+Fréjus,port,A0138383,ADM51
+Narbonne,port,A0136333,ADM47
+Redon,port,A0134176,ADM41
+Auray,port,A0131832,ADM41
+La Seyne,port,A0174851,ADM13
+Baie d'Authie,port,A0169535,ADM24
+Martrou,port,A0124423,ADM6
+Le Canet,port,A0127897,ADM8
+Gapeau,port,A0163037,ADM13
+Léoube,port,A0166127,ADM13
+Arles,port,A0139070,ADM36
+Châlon,port,A1969195,ADM6
+Locmariaquer,port,A0186503,ADM41
+Calvi,port,A0164778,ADM42
+Lavandou,port,A0151923,ADM13
+Carqueiranne ,port,A0156324,ADM13
+Hennebont,port,A0204263,ADM26
+Quiberon,port,A0197884,ADM41
+Port-Cros,port,A0153467,ADM13
+Concarneau,port,A0200627,ADM46
+Omonville,port,A0153622,ADM17
+La Mailleraye,port,A0125207,ADM21
+Quimper,port,A0175964,ADM46
+Port-des-Barques,port,A0129516,ADM6
+Antibes,port,A0133408,ADM14
+Étretat ,port,A0179074,ADM20
+Aber-Ildut,port,A0140339,ADM30
+Bernières-sur-Mer,port,A0205769,ADM28
+plages du Roussillon,port,A1965463,ADM8
+Bénodet,port,A0132243,ADM46
+Côtes de Provence,port,A0212843,ADM38
+Saintonge,port,A0134258,ADM6
+Meschers,port,A0140740,ADM6
+Arzon,port,A0145524,ADM41
+Bourg de l'Île-aux-Moines,port,A1965015,ADM41
+Sarzeau,port,A0202402,ADM41
+Vierville,port,A0207469,ADM34
+Dinan [Crozon],port,A0187629,ADM46
+Tréguier,port,A0213264,ADM35
+Cayes-Saint-Louis,port,B2053007,ADM52
+Cagnes,port,A0157230,ADM14
+Port-au-Prince,port,B2045255,ADM53
+Pont-de-Buis,port,A0185689,ADM46
+La Tremblade,port,A0186515,ADM6
+Bourcefranc ,port,A0145182,ADM6
+Le Vivier,port,A0187086,ADM9
+Le long des côtes de Normandie,port,A1968879,ADM17
+Aizier,port,A0157620,ADM21
+Villequier,port,A0153008,ADM21
+île-de-Bréhat,port,A0199798,ADM45
+Saint-Valery (indeterminé),port,A1964301,ADM33
+Saint-Marc,port,B2059102,ADM54
+Saint-Pierre,port,B1974029,ADM55
+Saint-Sauveur / Pleumeur,port,A0160698,ADM35
+Port-en-Bessin,port,A0136783,ADM56
+Lannion,port,A0162246,ADM35
+Castelnau,port,A0213627,ADM11
+Carteret,port,A0218266,ADM18
+Regnéville,port,A0209567,ADM44
+Port-Louis,port,A0124198,ADM26
+Saint-Savinien,port,A0147182,ADM6
+La Béchade,port,A0145654,ADM6
+Penerf,port,A0137954,ADM41
+Pontrieux ,port,A0139494,ADM35
+Carnac,port,A0144281,ADM41
+Dahouët ,port,A0180597,ADM45
+Saint-Trojan,port,A0159385,ADM6
+Brouage ,port,A0189364,ADM6
+île Molène,port,A1965072,ADM30
+L'Houmée,port,A0152629,ADM1
+Perros,port,A0185868,ADM35
+Pontusval,port,A0136872,ADM30
+Pont-Aven,port,A0160686,ADM46
+Paimbœuf,port,A0160615,ADM2
+Audierne ,port,A0206482,ADM46
+Baden,port,A0217875,ADM41
+Pointe-à-Pitre,port,B1979312,ADM57
+Fermanville,port,A0205299,ADM31
+Chateaulin,port,A0175688,ADM46
+Port-d'Envaux,port,A0212986,ADM6
+Reville,port,A0184867,ADM31
+Le Fret,port,A0162640,ADM46
+Aber-Wrac'h,port,A0150810,ADM30
+Trouville,port,A0172163,ADM3
+Notre-Dame-de-Monts,port,A0185571,ADM4
+Léogâne ,port,B2045171,ADM53
+La Bellière,port,A1965098,ADM9
+Le Plomb,port,A0170183,ADM1
+Loix,port,A0141676,ADM1
+Crach,port,A0192878,ADM41
+Saint-Briac,port,A0183923,ADM9
+Aber-Benoît,port,A0145379,ADM30
+Agon,port,A0157543,ADM44
+Saintes,port,A0170665,ADM6
+Minou,port,A0141185,ADM30
+Rhuys,port,A0123033,ADM41
+Ouessant,port,A0129606,ADM30
+Montoir,port,A0126875,ADM2
+Dinard,port,A0154380,ADM9
+l'Aiguillon,port,A0150761,ADM4
+île d'Arz,port,A0165753,ADM41
+Frioul,port,A0180040,ADM38
+Tancarville,port,A0196246,ADM16
+Dieppedalle,port,A0151102,ADM7
+Saint-Nazaire,port,A0195511,ADM2
+Querqueville,port,A0149747,ADM17
+Vieille Roche,port,A1965074,ADM41
+Port-Vendres,port,A0210592,ADM8
+îles Glénan,port,A0154990,ADM46
+Le Faou,port,A0198564,ADM46
+Lézardrieux ,port,A0212401,ADM35
+Plevenon,port,A0160634,ADM45
+Jérémie ,port,B2057431,ADM58
+Camaret,port,A0138920,ADM46
+Kerner,port,A0164581,ADM41
+Dercie,port,A1965055,ADM6
+Mornac,port,A0136390,ADM6
+La Barre-de-Monts,port,A0131495,ADM4
+Fouras,port,A0191707,ADM1
+Miragoâne ,port,B2062485,ADM59
+Saint-Louis,port,B2056379,ADM60
+Corréjou ,port,A0174058,ADM30
+Taillebourg,port,A0171943,ADM6
+Cannes,port,A0180024,ADM14
+La Forêt-Fouessant,port,A0141847,ADM46
+Saint-Jacut,port,A0188227,ADM9
+Langrune,port,A0150110,ADM28
+Blainville,port,A0144896,ADM28
+Sainte-Honorine,port,A0135509,ADM56
+La Brée,port,A0179464,ADM6
+La Roche-Torin,port,A1965012,ADM22
+Beslon,port,A0217697,ADM2
+Luc-sur-Mer,port,A0150947,ADM28
+mer des Pertuis,port,A1968950,ADM1
+Bonifacio,port,A0127306,ADM43
+Martigues,port,A0124996,ADM61
+Port-Navalo,port,A0139174,ADM41
+Arcachon,port,A0133336,ADM11
+Côtes du Rousillon,port,A1965060,ADM8
+Hendaye,port,A0167393,ADM5
+Noyalo,port,A0197058,ADM41
+La Plaine,port,A0153978,ADM2
+Vieux-Port,port,A0189765,ADM21
+Piriac ,port,A0124715,ADM2
+Quai au Cocq,port,A1965096,ADM3
+Penmarc' h,port,A0126834,ADM46
+Foulbec,port,A0215811,ADM3
+Saint-Aubin,port,A0172523,ADM28
+Saint-Servant,port,A0122484,ADM9
+Le Pas au Bœuf,port,A0123256,ADM9
+rivière de Bordeaux,port,A1968858,ADM11
+Jacmel,port,B2046102,ADM62
+Hors du Pertuis,port,A1968951,ADM4
+Groix,port,A0180365,ADM26
+Kernic,port,A0145857,ADM30
+Auderville,port,A0157382,ADM17
+Gouy,port,A0131070,ADM7
+Ambleteuse,port,A0194200,ADM19
+Renouville,port,A1965070,ADM31
+Locquémeau,port,A0155136,ADM35
+pertuis Breton,port,A0219226,ADM1
+île Rousse (Corse),port,A0126271,ADM42
+Charron,port,A0144350,ADM1
+Languedoc,port,A1965209,ADM48
+cap Tiburon,port,B2047006,ADM58
+Saint-Fromond,port,A0159894,ADM34
+Blainville-sur-Mer,port,A0218373,ADM44
+Erquy,port,A0189350,ADM45
+Locquirec,port,A0176962,ADM35
+Cavernes,port,A0194558,ADM11
+Soulac,port,A0209381,ADM11
+Muzillac,port,A0173719,ADM41
+Plougoumelen,port,A0175775,ADM41
+Bricqueville-près-la-Mer,port,A0156453,ADM44
+Plancoët,port,A0198247,ADM45
+cap Lévi,port,A0129508,ADM31
+Saint-Esprit,port,A0165801,ADM5
+Couëron,port,A0132317,ADM2
+coureau d'Oléron,port,A1967569,ADM6
+rade de la Pallice,port,A0154161,ADM1
+Le Chapus,port,A0212287,ADM6
+root,root,Z,0

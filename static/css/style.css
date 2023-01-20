@@ -1,0 +1,64 @@
+.offcanvas-size-xl {
+  --bs-offcanvas-width: min(95vw, 600px) !important;
+}
+
+.offcanvas-size-xxl {
+  --bs-offcanvas-width: min(95vw, 80vw) !important;
+}
+
+.offcanvas-size-md {
+  /* add Responsivenes to default offcanvas */
+  --bs-offcanvas-width: min(95vw, 400px) !important;
+}
+
+.offcanvas-size-sm {
+  --bs-offcanvas-width: min(95vw, 300px) !important;
+}
+
+
+.resizable {
+  width: 600px;
+  height: 500px;
+  overflow: hidden;
+
+  touch-action: none;
+
+  /* This makes things *much* easier */
+  box-sizing: border-box;
+}
+
+/* sidebar */
+#sidebar-menu {
+  width: 350px;
+}
+
+@media (max-width:576px) {
+  #sidebar-menu {
+    width: 60px;
+  }
+}
+
+/* highcharts */
+.highcharts-credits {
+  display: none;
+}
+.highcharts-title {
+  display: none;
+}
+
+/* devextreme treemap */
+#drill-down-title {
+  position: absolute;
+  top: 50px;
+  height: 36px;
+  width: 100%;
+  text-align: center;
+}
+
+.link {
+  color: #337ab7;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* storytelling */

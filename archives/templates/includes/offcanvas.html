@@ -1,0 +1,85 @@
+<div class="offcanvas offcanvas-{{direction}} offcanvas-size-xxl" data-bs-scroll="true" tabindex="-1"
+id="offcanvas{{direction}}" aria-labelledby="offcanvas{{direction}}Label">
+<div class="offcanvas-header">
+  <h5 class="offcanvas-title" id="offcanvas{{direction}}Label">Provinces-Amirautés-Ports de {{label}}</h5>
+  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+  <button class="btn btn-success" type="button" id="filter-{{key}}">
+    Filtrer
+   </button>
+  <div class="row">
+    <div class="col-md-3">
+      <div id="{{key}}-treelist"></div>
+    </div>
+    <div class="col-md-9">
+       
+      <div class="row">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Dynamique du nombre de {{label}}s par mois</h5>
+            <div class="row">
+              <!--<div class="col-md-4">
+                <div class="dropdown mt-3 pull-right">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown">
+                    [Todo] Niveau d'agrégation
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Ports</a></li>
+                    <li><a class="dropdown-item" href="#">Amirautés</a></li>
+                    <li><a class="dropdown-item" href="#">Province</a></li>
+                  </ul>
+                </div>
+              </div> -->
+              <div class="col-md-8">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="{{key}}_level" value="{{key}}_province" checked>
+                  <label class="form-check-label">Provinces</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="{{key}}_level" value="{{key}}_admiralty">
+                  <label class="form-check-label">Amirautés</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="{{key}}_level" value="{{key}}">
+                  <label class="form-check-label">Ports</label>
+                </div>
+              </div>
+            </div>
+            <div id="echarts-{{key}}-linerace" style="height: 500px;max-width: 100%;margin: 0 auto;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+      <div class="card" id="echarts-{{key}}-container">
+        <div class="card-body">
+          <h5 class="card-title">Nombre de {{label}}s par ports avec niveau d'incertitude</h5>
+          <h6 class="card-subtitle mb-2 text-muted">resizable section</h6>
+          <div id="echarts-{{key}}-barchart" style="width:100%;min-height: 400px;"></div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.1/echarts.min.js"
+      integrity="sha512-OTbGFYPLe3jhy4bUwbB8nls0TFgz10kn0TLkmyA+l3FyivDs31zsXCjOis7YGDtE2Jsy0+fzW+3/OVoPVujPmQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{{ url_for('static', filename= 'utils.js')}}"></script>
+<script src="{{ url_for('static', filename= 'charts/echarts_barchart_stacked.js')}}"></script>
+<script src="{{ url_for('static', filename= 'charts/echarts_line_race.js')}}"></script>
+<script>
+    echarts_barchart_stacked_uncertainity("{{key}}");
+    echarts_depdest_linerace("key="+$("input[name='{{key}}_level']:checked").val()+"&key=outdate_fixed_datetime_month_number&aggkey=travel_id&aggtype=count",$("input[name='{{key}}_level']:checked").val(),"travel_id", "outdate_fixed_datetime_month_number","echarts-{{key}}-linerace")
+    /* event */
+ $('input[name={{key}}_level]').change(function(){
+  console.log($("input[name='{{key}}_level']:checked").val())
+    echarts_depdest_linerace("key="+$("input[name='{{key}}_level']:checked").val()+"&key=outdate_fixed_datetime_month_number&aggkey=travel_id&aggtype=count",$("input[name='{{key}}_level']:checked").val(),"travel_id", "outdate_fixed_datetime_month_number","echarts-{{key}}-linerace")
+    });
+</script>

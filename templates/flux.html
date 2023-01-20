@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+ <!-- filters sidebar-->
+<div class="col-sm-2 col-auto collapse collapse-horizontal overflow-hidden" id="sidebar">
+    <div id="sidebar-menu">
+    {% include 'includes/filters-sidebar.html' %}
+    </div>
+</div>
+  <!--end filters sidebar-->
+<main class="col-sm col border-start ps-md-2 pt-2">
+    <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse" class="border rounded-3 p-1 text-decoration-none"><i class="fa fa-navicon fa-lg py-2 p-1"></i> Filtres</a>
+
+    <h2 class="text-center">Analyse des flux</h2>
+
+    <div class="row">
+        <!--collapse sections -->
+        <div class="row">
+            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-datagrid"
+                aria-expanded="false" aria-controls="collapse-datagrid">Voir les données</button>
+            <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-validated-filters" aria-expanded="false"
+                aria-controls="collapse-datagrid">Voir les filtres appliqués</button>
+        </div>
+        <div class="row collapse" id="collapse-datagrid">
+            <div id="datagrid"></div>
+        </div>
+        <div class="row collapse" id="collapse-validated-filters">
+            <p>
+                <bold>Ports de départ</bold> : <span id="returned-dep"></span>
+            </p>
+            <p>
+                <bold>Ports de destination</bold> : <span id="returned-dest">
+            </p>
+            <p>
+                <bold>Degré d'incertitude</bold> : <span id="returned-uncertainity"></span>
+            </p>
+        </div>
+        <!--end collapse sections -->
+        
+        <!-- tabs menu-->
+        <ul class="nav nav-tabs" id="fluxTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#origin-destination-tab-content" type="button" role="tab" aria-controls="origin-destination-tab" aria-selected="true">Origine-destination</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#products-tab-content" type="button" role="tab" aria-controls="products-tab" aria-selected="false">Produits</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#flags-tab-content" type="button" role="tab" aria-controls="flags-tab" aria-selected="false">Pavillons</button>
+            </li>
+          </ul>
+        <!-- end tabs menu-->
+
+        <!-- tabs content-->
+        <div class="tab-content" id="fluxTabContent">
+         
+            <!-- origin-destination tab content-->
+            <div class="tab-pane fade show active" id="origin-destination-tab-content" role="tabpanel" aria-labelledby="origin-destination-tab">
+                {% include 'includes/origin-destination-tab-content.html' %}    
+       </div>
+       <!--end origin-destination tab content-->
+
+         <!-- products tab content-->
+         <div class="tab-pane fade" id="products-tab-content" role="tabpanel" aria-labelledby="products-tab">
+            {% include 'includes/products-tab-content.html' %}    
+   </div>
+   <!--end products tab content-->
+        </div>
+         <!--end tabs content-->
+
+</div>
+</main>
+<script src="{{ url_for('static', filename= 'data/geographical_hierarchy.js')}}"></script>
+<script src="{{ url_for('static', filename= 'js/utils.js')}}"></script>
+<script src="{{ url_for('static', filename= 'js/treelist.js')}}"></script>
+<script src="{{ url_for('static', filename= 'js/datagrid.js')}}"></script>
+{% endblock %}

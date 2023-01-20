@@ -1,0 +1,44 @@
+<button class="btn btn-outline-primary btn-sm" type="button" id="selection-apply-filters">
+    Appliquer les filtres
+   </button>
+<button class="btn btn-outline-danger btn-sm" type="button" id="clear-all-filters">
+    Supprimer tous les filtres
+</button>
+<hr>
+<h5>Incertitude</h5>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox"  name="uncertainity_level" value="0" checked>
+    <label class="form-check-label">
+      Certifié (les 2 pointcalls sont certains (0)
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox"  name="uncertainity_level" value="-1" checked>
+    <label class="form-check-label">
+      Déclaré (un des 2 pointcalls a pour valeur -1)
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox"  name="uncertainity_level" value="-3" checked>
+    <label class="form-check-label">
+      Non réalisé (un des deux pointcalls contredit (-3) par analyse avec d'autres documents)
+    </label>
+  </div>
+<hr>
+<h5>Provinces-Amirautés-Ports de départ</h5>
+<div id="departure-treelist"></div>
+<hr>
+<h5>Provinces-Amirautés-Ports de destination</h5>
+<div id="destination-treelist"></div>
+
+<script>
+   // sidebar clear filters
+   $("#clear-all-filters").click(function(){
+          $('#departure-treelist').dxTreeList("instance").selectRows([], true);
+          $('#destination-treelist').dxTreeList("instance").selectRows([], true);
+          $('input[name=uncertainity_level]').attr('checked','checked');
+
+          $.when(datagridLoadData).then(barGaugeLoadData(),linearGaugeLoadData());
+
+        });
+</script>

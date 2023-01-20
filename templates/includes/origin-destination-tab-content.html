@@ -1,0 +1,99 @@
+   <!-- gauge charts-->
+   <div class="row">
+    <h3>Data abstract v1</h3>   
+    <div class="col-md-4">
+        <h5 id="label-percent_travels"></h5>
+        <div id="data-abstract-gauge-percent_travels" style="height:200px;max-width:80%;margin: 0 auto;"></div>
+    </div>
+    <div class="col-md-4">
+        <h5 id="label-percent_tonnage"></h5>
+        <div id="data-abstract-gauge-percent_tonnage" style="height:200px;max-width:80%;margin: 0 auto;"></div>
+    </div>
+    <div class="col-md-4">
+        <h5 id="label-percent_unknown_products"></h5>
+        <div id="data-abstract-gauge-percent_unknown_products" style="height:200px;max-width:80%;margin: 0 auto;"></div>
+    </div>
+   <!-- <div class="col-md-6">
+    <h3>Data abstract v1</h3>
+    <div class="card">
+        <div class="card-header">
+            <p>Gauges linéaires</p>
+        </div>
+        <div class="card-body">
+            <div style="height:500px;max-width:100%;margin: 0 auto;">
+                <div id="percent_travels-linear-gauge" style="height: 110px;"></div>
+                <div id="percent_tonnage-linear-gauge" style="height: 110px;"></div>
+                <div id="percent_unknown_products-linear-gauge" style="height: 110px;"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h3>Data abstract v2</h3>
+        <div class="card">
+            <div class="card-header">
+                <p>Gauges circulaires</p>
+            </div>
+            <div class="card-body">
+                <div id="data-abstract-bar-gauge"
+                    style="height:500px;max-width:100%;margin: 0 auto;">
+                </div>
+            </div>
+            </div>
+    </div> -->
+ </div>
+ <!-- end gauge charts-->
+
+<!-- departure charts -->
+<div class="row">
+    <h3>Départs</h3> 
+        {% with key="departure", label="départ" %}
+    {% include 'includes/departure-destination-barchart.html' %}
+    {% endwith %}
+ </div>
+  <!-- end departure charts -->
+    <!-- destination charts -->
+<div class="row">
+    <h3>Destinations</h3> 
+        {% with key="destination", label="destination" %}
+    {% include 'includes/departure-destination-barchart.html' %}
+    {% endwith %}
+</div>
+<!-- end destination charts -->   
+
+<!-- sankey chart-->
+ <div class="row">
+    <div class="col-md-8">
+    <h3>Flux origine-destination</h3>
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-6">
+                  <h6>Départs</h6>
+                  {% with key="departure", prefix="sankey" %}
+                    {% include 'includes/radio-buttons-inline.html' %}
+                {% endwith %}
+                </div>
+                <div class="col-md-6">
+                    <h6>Destinations</h6>
+                    {% with key="destination", prefix="sankey" %}
+                      {% include 'includes/radio-buttons-inline.html' %}
+                  {% endwith %}
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div id="departure-destination-sankeychart"
+                style="height:500px;max-width:100%;margin: 0 auto;">
+            </div>
+        </div>
+    </div>
+    </div>
+ </div>
+<!--end sankey chart-->
+<!--<script src="{{ url_for('static', filename= 'charts/data-abstract-linear-gauges.js')}}"></script>
+<script src="{{ url_for('static', filename= 'charts/data-abstract-bar-gauges.js')}}"></script>-->
+<script src="{{ url_for('static', filename= 'charts/data-abstract-highcharts-gauge.js')}}"></script>
+<script src="{{ url_for('static', filename= 'charts/departure-destination-barchart.js')}}"></script>
+<script src="{{ url_for('static', filename= 'charts/departure-destination-uncertainity-stacked-barchart.js')}}"></script>
+<script src="{{ url_for('static', filename= 'charts/departure-destination-sankeychart.js')}}"></script>

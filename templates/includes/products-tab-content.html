@@ -1,0 +1,53 @@
+ <!-- products streamchart-->
+ <div class="row">
+    <h3>Cargaisons transportés (détail par mois)</h3>
+    <div class="col-md-10">
+    <div class="card">
+        <div class="card-header">
+          <div class="row">
+            <h6>Niveau d'agrégation des produits</h6>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="products_level" value="category_portic_fr"
+                    checked>
+                <label class="form-check-label">Pat catégories</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="products_level" value="commodity_standardized_fr">
+                <label class="form-check-label">Par produits détaillés</label>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+            <div id="highcharts-streamgraph-products" style="height: 500px;max-width: 100%;margin: 0 auto;">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- product streamchart-->
+
+<div class="row">
+    <div class="col-md-6">
+        <h3>Treemap simple</h3>
+        <div class="card">
+            <div class="card-body">
+                <div id="products-treemap-simple" style="height: 500px;max-width: 100%;margin: 0 auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h3>Treemap avec avec Drill down</h3>
+        <div class="card">
+            <div class="card-header">
+                <div id="drill-down-title"></div>
+            </div>
+            <div class="card-body">
+                <div id="products-treemap-drill" style="height: 500px;max-width: 100%;margin: 0 auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename= 'charts/products-highcharts-streamgraph.js')}}"></script>
+<script src="{{ url_for('static', filename= 'charts/products-treemap.js')}}"></script>
